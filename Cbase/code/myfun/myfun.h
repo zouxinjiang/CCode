@@ -10,59 +10,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ADDINT addInt
-#define ADDFLOAT addFloat
-#define ADDLONG addLong
-#define ADDSHORT addShort
-#define ADDDOUBLE addDouble
+#define ADDINT 0
+#define ADDFLOAT 1
+#define ADDLONG 2
+#define ADDSHORT 3
+#define ADDDOUBLE 4
 
-#define SUBINT subInt
-#define SUBFLOAT subFloat
-#define SUBLONG subLong
-#define SUBSHORT subShort
-#define SUBDOUBLE subDouble
+#define SUBINT 5
+#define SUBFLOAT 6
+#define SUBLONG 7
+#define SUBSHORT 8
+#define SUBDOUBLE 9
 
-#define MULTINT multipleInt
-#define MULTFLOAT multipleFloat
-#define MULTLONG multipleLong
-#define MULTSHORT multipleShort
-#define MULTDOUBLE multipleDouble
+#define MULTINT 10
+#define MULTFLOAT 11
+#define MULTLONG 12
+#define MULTSHORT 13
+#define MULTDOUBLE 14
 
-#define DIVINT divisionInt
-#define DIVFLOAT divisionFloat
-#define DIVLONG divisionLong
-#define DIVSHORT divisionshort
-#define DIVDOUBLE divisionDouble
+#define DIVINT 15
+#define DIVFLOAT 16
+#define DIVLONG 17
+#define DIVSHORT 18
+#define DIVDOUBLE 19
 
+#define MODEINT 20
+#define MODELONG 21
+#define MODESHORT 22
 
 void simpleArithmetic(void *a,void *b,void *res,void (*pfun)(void *,void *,void *));
-
-void addInt(int *a,int *b,int *sum);
-void addFloat(float *a,float *b,float *sum);
-void addShort(short *a,short *b,short *sum);
-void addLong(long *a,long *b,long *sum);
- void addDouble(double *a,double *b,double *sum);
-//减法
- void subInt(int *a,int *b,int *res);
- void subFloat(float *a,float *b,float *res);
- void subShort(short *a,short *b,short *res);
- void subLong(long *a,long *b,long *res);
- void subDouble(double *a,double *b,double *res);
-//乘法
- void multipleInt(int *a,int *b,int *res);
- void multipleFloat(float *a,float *b,float *res);
- void multipleShort(short *a,short *b,short *res);
- void multipleLong(long *a,long *b,long *res);
- void multipleDouble(double *a,double *b,double *res);
-//除法
- void divisionInt(int *a,int *b,int *res);
- void divisionFloat(float *a,float *b,float *res);
- void divisionShort(short *a,short *b,short *res);
- void divisionLong(long *a,long *b,long *res);
- void divisionDouble(double *a,double *b,double *res);
-//取模
- void modeInt(int *a,int *b,int *res);
- void modeShort(short *a,short *b,short *res);
- void modeLong(long *a,long *b,long *res);
+void innerSimpleArithmetic(void *a,void *b,void *res,int type);
 
 #endif
