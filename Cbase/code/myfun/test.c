@@ -7,6 +7,5 @@ int main(int argc,char * argv[])
 
 	simpleArithmetic(&a,&b,res,(void *)SUBINT);
 	printf("%d\n",*res);
-
 	return 0;
 }
