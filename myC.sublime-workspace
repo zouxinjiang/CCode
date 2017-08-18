@@ -4,8 +4,12 @@
 		"selected_items":
 		[
 			[
+				"fun",
+				"funtype"
+			],
+			[
 				"add",
-				"addTem"
+				"addInt"
 			],
 			[
 				"p",
@@ -30,10 +34,6 @@
 			[
 				"http",
 				"http_build_query"
-			],
-			[
-				"fun",
-				"function"
 			],
 			[
 				"zxj",
@@ -104,34 +104,26 @@
 	"buffers":
 	[
 		{
-			"file": "Cbase/code/template.c",
+			"file": "Cbase/code/objectCode/classes/helloWorldClass.h",
 			"settings":
 			{
-				"buffer_size": 1219,
+				"buffer_size": 227,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Cbase/code/myfun/myfun.h",
+			"file": "Cbase/code/objectCode/classes/helloWorldClass.c",
 			"settings":
 			{
-				"buffer_size": 839,
+				"buffer_size": 165,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Cbase/code/myfun/test.c",
+			"file": "Cbase/code/objectCode/test/test.c",
 			"settings":
 			{
-				"buffer_size": 185,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Cbase/code/myfun/myfun.c",
-			"settings":
-			{
-				"buffer_size": 1978,
+				"buffer_size": 222,
 				"line_ending": "Windows"
 			}
 		}
@@ -156,15 +148,19 @@
 			]
 		]
 	],
-	"build_varint": "Run",
+	"build_varint": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 334.0,
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"Bookmarks: Clear All"
+			]
 		],
-		"width": 0.0
+		"width": 392.0
 	},
 	"console":
 	{
@@ -193,17 +189,24 @@
 		"/F/CCode",
 		"/F/CCode/Cbase",
 		"/F/CCode/Cbase/code",
-		"/F/CCode/Cbase/code/myfun",
+		"/F/CCode/Cbase/code/objectCode",
+		"/F/CCode/Cbase/code/objectCode/classes",
+		"/F/CCode/Cbase/code/objectCode/test",
 		"/F/CCode/Cbase/doc"
 	],
 	"file_history":
 	[
-		"/F/CCode/Cbase/code/myfun/test.i",
+		"/F/CCode/Cbase/code/class.c",
+		"/F/CCode/Cbase/code/objectCode/classes/helloWorldClass.c",
+		"/F/CCode/Cbase/code/myfun/test.c",
+		"/F/CCode/Cbase/code/myfun/myfun.h",
 		"/F/CCode/Cbase/code/myfun/myfun.c",
+		"/C/Users/zouxinjiang/AppData/Local/Temp/scp17316/usr/local/apache2/htdocs/index.php",
+		"/F/CCode/Cbase/code/template.c",
+		"/F/CCode/Cbase/code/myfun/test.i",
 		"/F/CCode/Cbase/code/pointer.c",
 		"/F/CCode/Cbase/code/myfun/addFun.h",
 		"/C/Users/zouxinjiang/AppData/Local/Temp/scp46605/usr/local/apache2/htdocs/getClass/deal.php",
-		"/F/CCode/Cbase/code/class.c",
 		"/F/CCode/Cbase/code/code.c",
 		"/F/CCode/Cbase/doc/includefile.txt",
 		"/C/Users/zouxinjiang/AppData/Roaming/Sublime Text 3/Packages/User/C.sublime-build",
@@ -249,6 +252,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sub",
+			"add",
 			"static",
 			"void",
 			"addint",
@@ -263,6 +268,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"mode",
+			"division",
+			"multiple",
+			"sub",
 			""
 		],
 		"reverse": false,
@@ -274,85 +283,29 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Cbase/code/template.c",
+					"file": "Cbase/code/objectCode/classes/helloWorldClass.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1219,
+						"buffer_size": 227,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								248,
-								0
+								47,
+								47
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Cbase/code/myfun/myfun.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 839,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								583,
-								583
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 456.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Cbase/code/myfun/test.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 185,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								171,
-								171
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
+							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -362,26 +315,53 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "Cbase/code/myfun/myfun.c",
+					"buffer": 1,
+					"file": "Cbase/code/objectCode/classes/helloWorldClass.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1978,
+						"buffer_size": 165,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								20,
-								20
+								101,
+								101
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Cbase/code/objectCode/test/test.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								179,
+								179
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
