@@ -104,26 +104,10 @@
 	"buffers":
 	[
 		{
-			"file": "Cbase/code/objectCode/classes/helloWorldClass.h",
+			"file": "Cbase/calc/fib.c",
 			"settings":
 			{
-				"buffer_size": 227,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Cbase/code/objectCode/classes/helloWorldClass.c",
-			"settings":
-			{
-				"buffer_size": 165,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Cbase/code/objectCode/test/test.c",
-			"settings":
-			{
-				"buffer_size": 222,
+				"buffer_size": 542,
 				"line_ending": "Windows"
 			}
 		}
@@ -148,7 +132,7 @@
 			]
 		]
 	],
-	"build_varint": "",
+	"build_varint": "Run",
 	"command_palette":
 	{
 		"height": 334.0,
@@ -188,16 +172,14 @@
 	[
 		"/F/CCode",
 		"/F/CCode/Cbase",
-		"/F/CCode/Cbase/code",
-		"/F/CCode/Cbase/code/objectCode",
-		"/F/CCode/Cbase/code/objectCode/classes",
-		"/F/CCode/Cbase/code/objectCode/test",
-		"/F/CCode/Cbase/doc"
+		"/F/CCode/Cbase/calc"
 	],
 	"file_history":
 	[
-		"/F/CCode/Cbase/code/class.c",
+		"/F/CCode/Cbase/code/objectCode/classes/helloWorldClass.h",
 		"/F/CCode/Cbase/code/objectCode/classes/helloWorldClass.c",
+		"/F/CCode/Cbase/code/objectCode/test/test.c",
+		"/F/CCode/Cbase/code/class.c",
 		"/F/CCode/Cbase/code/myfun/test.c",
 		"/F/CCode/Cbase/code/myfun/myfun.h",
 		"/F/CCode/Cbase/code/myfun/myfun.c",
@@ -252,6 +234,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"unsigned long long",
 			"sub",
 			"add",
 			"static",
@@ -268,6 +251,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"__int64",
 			"mode",
 			"division",
 			"multiple",
@@ -288,86 +272,30 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Cbase/code/objectCode/classes/helloWorldClass.h",
+					"file": "Cbase/calc/fib.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 227,
+						"buffer_size": 542,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								47,
-								47
+								39,
+								39
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.sublime-syntax"
+							"syntax": "Packages/C++/C.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Cbase/code/objectCode/classes/helloWorldClass.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 165,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								101,
-								101
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Cbase/code/objectCode/test/test.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 222,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								179,
-								179
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
