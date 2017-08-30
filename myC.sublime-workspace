@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"_s",
+				"_size"
+			],
+			[
+				"new",
+				"newVector"
+			],
+			[
+				"s",
+				"_size"
+			],
+			[
+				"ma",
+				"_maxSize"
+			],
+			[
+				"e",
+				"elem"
+			],
+			[
+				"ele",
+				"elem"
+			],
+			[
+				"_",
+				"_maxSize"
+			],
+			[
+				"v",
+				"vector"
+			],
+			[
+				"Ele",
+				"ELEMTYPE"
+			],
+			[
 				"fun",
 				"funtype"
 			],
@@ -61,7 +97,7 @@
 			],
 			[
 				"fore",
-				"foreach	foreach …"
+				"foreach\tforeach …"
 			],
 			[
 				"op",
@@ -104,10 +140,29 @@
 	"buffers":
 	[
 		{
-			"file": "Cbase/calc/fib.c",
+			"file": "Cbase/vector/vector.h",
 			"settings":
 			{
-				"buffer_size": 542,
+				"buffer_size": 998,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Cbase/vector/vector.c",
+			"settings":
+			{
+				"buffer_size": 2619,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Cbase/vector/test.c",
+			"settings":
+			{
+				"buffer_size": 617,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -132,7 +187,7 @@
 			]
 		]
 	],
-	"build_varint": "Run",
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 334.0,
@@ -172,10 +227,17 @@
 	[
 		"/F/CCode",
 		"/F/CCode/Cbase",
-		"/F/CCode/Cbase/calc"
+		"/F/CCode/Cbase/vector"
 	],
 	"file_history":
 	[
+		"/F/CCode/Cbase/vector/vector.s",
+		"/F/CCode/Cbase/vector/test.s",
+		"/F/CCode/Cbase/vector/vector.c",
+		"/C/Users/zouxinjiang/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/zouxinjiang/AppData/Roaming/Sublime Text 3/Packages/User/myBlock.sublime-snippet",
+		"/F/CCode/Cbase/calc/fib.c",
+		"/C/Users/zouxinjiang/AppData/Local/Temp/scp01338/root/loginUser.log",
 		"/F/CCode/Cbase/code/objectCode/classes/helloWorldClass.h",
 		"/F/CCode/Cbase/code/objectCode/classes/helloWorldClass.c",
 		"/F/CCode/Cbase/code/objectCode/test/test.c",
@@ -192,7 +254,6 @@
 		"/F/CCode/Cbase/code/code.c",
 		"/F/CCode/Cbase/doc/includefile.txt",
 		"/C/Users/zouxinjiang/AppData/Roaming/Sublime Text 3/Packages/User/C.sublime-build",
-		"/C/Users/zouxinjiang/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/F/CCode/myC.sublime-project",
 		"/F/CCode/Cbase/doc/base",
 		"/F/CCode/Cbase/readme",
@@ -243,7 +304,7 @@
 			"res",
 			" *",
 			"response",
-			"public function setUrl($url){\n		$this->url = $url;\n	}"
+			"public function setUrl($url){\n\t\t$this->url = $url;\n\t}"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -267,24 +328,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Cbase/calc/fib.c",
+					"file": "Cbase/vector/vector.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 542,
+						"buffer_size": 998,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								39,
-								39
+								483,
+								483
 							]
 						],
 						"settings":
@@ -292,7 +353,63 @@
 							"syntax": "Packages/C++/C.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 285.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Cbase/vector/vector.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2619,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2420,
+								2420
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2109.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Cbase/vector/test.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 617,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								496,
+								496
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 171.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
