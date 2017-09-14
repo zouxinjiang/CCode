@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"std",
+				"stdio"
+			],
+			[
+				"prin",
+				"vctPrint"
+			],
+			[
+				"_",
+				"_maxSize"
+			],
+			[
+				"vctS",
+				"vctSwap"
+			],
+			[
+				"pos",
+				"pos2"
+			],
+			[
+				"po",
+				"pos1"
+			],
+			[
+				"el",
+				"elem"
+			],
+			[
+				"vctP",
+				"vctPush"
+			],
+			[
+				"def",
+				"define"
+			],
+			[
+				"ele",
+				"elemType"
+			],
+			[
 				"_s",
 				"_size"
 			],
@@ -22,14 +62,6 @@
 			[
 				"e",
 				"elem"
-			],
-			[
-				"ele",
-				"elem"
-			],
-			[
-				"_",
-				"_maxSize"
 			],
 			[
 				"v",
@@ -143,7 +175,7 @@
 			"file": "Cbase/vector/vector.h",
 			"settings":
 			{
-				"buffer_size": 998,
+				"buffer_size": 1632,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -152,16 +184,19 @@
 			"file": "Cbase/vector/vector.c",
 			"settings":
 			{
-				"buffer_size": 2619,
+				"buffer_size": 6147,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
+			"contents": "#define ELEMTYPE int\n //#include <stdio.h>\n// #include <stdlib.h>\n#include \"vector.h\"\n#include <stdio.h>\n\nvoid vctPrint(vector v);\n\nint main(int argc,char* argv[])\n{\n\tvector v,tem;\n\tvctInit(&v);\n\tvctPush(&v,1);\n\tvctPush(&v,3);\n\tvctPush(&v,5);\n\tvctPush(&v,7);\n\tvctPush(&v,2);\n\tvctPush(&v,4);\n\tvctPush(&v,6);\n\tvctPush(&v,8);\n\tvctPrint(v);\n\tprintf(\"-------------------\\n\");\n\tvctPop(&v);\n\tvctPrint(v);\n\tprintf(\"-------------------\\n\");\n\tvctInsert(&v,100,5);\n\tvctPrint(v);\n\tprintf(\"-------------------\\n\");\n\tvctInsert(&v,101,5);\n\tvctInsert(&v,102,5);\n\tvctInsert(&v,103,5);\n\tvctInsert(&v,200,5);\n\tvctInsert(&v,200,5);\n\tvctInsert(&v,200,5);\n\tvctPrint(v);\n\tprintf(\"-------------------\\n\");\n\t// //???????\n\t// vctDelete(&v,200,2);\n\t// vctPrint(v);\n\t// printf(\"-------------------\\n\");\n\tprintf(\"====%d====\\n\", v._maxSize);\n\tvctRemove(&v,3,7);\n\tvctPrint(v);\n\tprintf(\"-------------------\\n\");\n\tprintf(\"====%d====\\n\", v._maxSize);\n\n\n\tvctRange(v,3,7,&tem);\n\tvctPrint(tem);\n\tprintf(\"-------------------\\n\");\n\n\tvctReverse(&v,3,10);\n\tvctPrint(v);\n\tprintf(\"R-------------------\\n\");\n\tvctErase(&v,5,5,0);\n\tvctPrint(v);\n\tprintf(\"R-------------------\\n\");\n\tvctSwap(&v,2,7);\n\tvctPrint(v);\n\tprintf(\"R-------------------\\n\");\n\n\n\n\treturn 0;\n}\n\nvoid vctPrint(vector v)\n{\n\tint i = 0;\n\tfor(i = 0;i < v._size;i++){\n\t\tprintf(\"%d ==> %d \\n\",i,v.elem[i]);\n\t}\n}",
 			"file": "Cbase/vector/test.c",
+			"file_size": 1398,
+			"file_write_time": 131498734864175457,
 			"settings":
 			{
-				"buffer_size": 617,
+				"buffer_size": 1327,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -231,9 +266,12 @@
 	],
 	"file_history":
 	[
-		"/F/CCode/Cbase/vector/vector.s",
-		"/F/CCode/Cbase/vector/test.s",
 		"/F/CCode/Cbase/vector/vector.c",
+		"/F/CCode/Cbase/vector/vector.h",
+		"/F/CCode/Cbase/vector/test.c",
+		"/F/CCode/Cbase/vector/struct.h",
+		"/F/CCode/Cbase/vector/test.s",
+		"/F/CCode/Cbase/vector/vector.s",
 		"/C/Users/zouxinjiang/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/zouxinjiang/AppData/Roaming/Sublime Text 3/Packages/User/myBlock.sublime-snippet",
 		"/F/CCode/Cbase/calc/fib.c",
@@ -295,6 +333,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ERAS",
+			"vctRemove",
+			"push",
+			"hi",
+			"vector",
 			"unsigned long long",
 			"sub",
 			"add",
@@ -328,7 +371,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -337,26 +380,26 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 998,
+						"buffer_size": 1632,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								483,
-								483
+								1430,
+								1430
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C.sublime-syntax"
+							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 285.0,
+						"translation.y": 855.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -365,26 +408,27 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2619,
+						"buffer_size": 6147,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2420,
-								2420
+								5484,
+								5484
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C.sublime-syntax"
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2109.0,
+						"translation.y": 5293.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -393,15 +437,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 617,
+						"buffer_size": 1327,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								496,
-								496
+								1201,
+								1201
 							]
 						],
 						"settings":
@@ -409,10 +453,10 @@
 							"syntax": "Packages/C++/C.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 171.0,
+						"translation.y": 855.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
