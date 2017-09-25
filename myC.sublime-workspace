@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"ELEM_S",
+				"ELEM_STRUCT"
+			],
+			[
+				"ELE",
+				"ELEM_STR"
+			],
+			[
+				"EL",
+				"ELEM_STR"
+			],
+			[
+				"def",
+				"define"
+			],
+			[
 				"std",
 				"stdio"
 			],
@@ -34,10 +50,6 @@
 			[
 				"vctP",
 				"vctPush"
-			],
-			[
-				"def",
-				"define"
 			],
 			[
 				"ele",
@@ -184,19 +196,7 @@
 			"file": "Cbase/vector/vector.c",
 			"settings":
 			{
-				"buffer_size": 6147,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "#define ELEMTYPE int\n //#include <stdio.h>\n// #include <stdlib.h>\n#include \"vector.h\"\n#include <stdio.h>\n\nvoid vctPrint(vector v);\n\nint main(int argc,char* argv[])\n{\n\tvector v,tem;\n\tvctInit(&v);\n\tvctPush(&v,1);\n\tvctPush(&v,3);\n\tvctPush(&v,5);\n\tvctPush(&v,7);\n\tvctPush(&v,2);\n\tvctPush(&v,4);\n\tvctPush(&v,6);\n\tvctPush(&v,8);\n\tvctPrint(v);\n\tprintf(\"-------------------\\n\");\n\tvctPop(&v);\n\tvctPrint(v);\n\tprintf(\"-------------------\\n\");\n\tvctInsert(&v,100,5);\n\tvctPrint(v);\n\tprintf(\"-------------------\\n\");\n\tvctInsert(&v,101,5);\n\tvctInsert(&v,102,5);\n\tvctInsert(&v,103,5);\n\tvctInsert(&v,200,5);\n\tvctInsert(&v,200,5);\n\tvctInsert(&v,200,5);\n\tvctPrint(v);\n\tprintf(\"-------------------\\n\");\n\t// //???????\n\t// vctDelete(&v,200,2);\n\t// vctPrint(v);\n\t// printf(\"-------------------\\n\");\n\tprintf(\"====%d====\\n\", v._maxSize);\n\tvctRemove(&v,3,7);\n\tvctPrint(v);\n\tprintf(\"-------------------\\n\");\n\tprintf(\"====%d====\\n\", v._maxSize);\n\n\n\tvctRange(v,3,7,&tem);\n\tvctPrint(tem);\n\tprintf(\"-------------------\\n\");\n\n\tvctReverse(&v,3,10);\n\tvctPrint(v);\n\tprintf(\"R-------------------\\n\");\n\tvctErase(&v,5,5,0);\n\tvctPrint(v);\n\tprintf(\"R-------------------\\n\");\n\tvctSwap(&v,2,7);\n\tvctPrint(v);\n\tprintf(\"R-------------------\\n\");\n\n\n\n\treturn 0;\n}\n\nvoid vctPrint(vector v)\n{\n\tint i = 0;\n\tfor(i = 0;i < v._size;i++){\n\t\tprintf(\"%d ==> %d \\n\",i,v.elem[i]);\n\t}\n}",
-			"file": "Cbase/vector/test.c",
-			"file_size": 1398,
-			"file_write_time": 131498734864175457,
-			"settings":
-			{
-				"buffer_size": 1327,
+				"buffer_size": 6223,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -262,13 +262,18 @@
 	[
 		"/F/CCode",
 		"/F/CCode/Cbase",
-		"/F/CCode/Cbase/vector"
+		"/F/CCode/Cbase/vector",
+		"/F/CCode/Cbase/vector2"
 	],
 	"file_history":
 	[
-		"/F/CCode/Cbase/vector/vector.c",
-		"/F/CCode/Cbase/vector/vector.h",
 		"/F/CCode/Cbase/vector/test.c",
+		"/D/php/wamp/www/file.php",
+		"/D/php/wamp/www/c.txt",
+		"/F/CCode/Cbase/vector/xx.i",
+		"/F/CCode/Cbase/vector2/vector.h",
+		"/F/CCode/Cbase/vector/vector.h",
+		"/F/CCode/Cbase/vector/vector.c",
 		"/F/CCode/Cbase/vector/struct.h",
 		"/F/CCode/Cbase/vector/test.s",
 		"/F/CCode/Cbase/vector/vector.s",
@@ -371,7 +376,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -387,8 +392,8 @@
 						"selection":
 						[
 							[
-								1430,
-								1430
+								557,
+								513
 							]
 						],
 						"settings":
@@ -396,10 +401,10 @@
 							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 855.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -408,15 +413,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6147,
+						"buffer_size": 6223,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5484,
-								5484
+								2356,
+								2356
 							]
 						],
 						"settings":
@@ -425,38 +430,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5293.0,
+						"translation.y": 1653.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Cbase/vector/test.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1327,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1201,
-								1201
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 855.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

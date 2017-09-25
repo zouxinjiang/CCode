@@ -105,8 +105,9 @@ void vctPush(struct vector *v ,ELEMTYPE val)
 	if(v->_maxSize == v->_size || v->_maxSize == 0){
 		enlarge(v,DEFAULT);
 	}
-	v->elem[v->_size] = val;
+	*(v->elem+v->_size) = val;
 	v->_size++;
+	printf("---------=======%c==========--------\n",*(v->elem+v->_size-2) );
 }
 /**
 *	fn				出栈操作

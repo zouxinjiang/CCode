@@ -1,4 +1,4 @@
-#define ELEMTYPE int
+#define ELEMTYPE char
  //#include <stdio.h>
 // #include <stdlib.h>
 #include "vector.h"
@@ -10,28 +10,32 @@ int main(int argc,char* argv[])
 {
 	vector v,tem;
 	vctInit(&v);
-	vctPush(&v,1);
-	vctPush(&v,3);
-	vctPush(&v,5);
-	vctPush(&v,7);
-	vctPush(&v,2);
-	vctPush(&v,4);
-	vctPush(&v,6);
-	vctPush(&v,8);
+	vctPush(&v,'a');
+	vctPrint(v);
+	printf("-------------------\n");
+	vctPush(&v,'c');
+	vctPrint(v);
+	printf("-------------------\n");
+	vctPush(&v,'f');
+	vctPush(&v,'h');
+	vctPush(&v,'b');
+	vctPush(&v,'d');
+	vctPush(&v,'f');
+	vctPush(&v,'i');
 	vctPrint(v);
 	printf("-------------------\n");
 	vctPop(&v);
 	vctPrint(v);
 	printf("-------------------\n");
-	vctInsert(&v,100,5);
+	vctInsert(&v,'x',5);
 	vctPrint(v);
 	printf("-------------------\n");
-	vctInsert(&v,101,5);
-	vctInsert(&v,102,5);
-	vctInsert(&v,103,5);
-	vctInsert(&v,200,5);
-	vctInsert(&v,200,5);
-	vctInsert(&v,200,5);
+	vctInsert(&v,'w',5);
+	vctInsert(&v,'q',5);
+	vctInsert(&v,'e',5);
+	vctInsert(&v,'r',5);
+	vctInsert(&v,'t',5);
+	vctInsert(&v,'y',5);
 	vctPrint(v);
 	printf("-------------------\n");
 	// //???????
@@ -52,14 +56,15 @@ int main(int argc,char* argv[])
 	vctReverse(&v,3,10);
 	vctPrint(v);
 	printf("R-------------------\n");
-	vctErase(&v,5,5,0);
+	vctErase(&v,5,6,'p');
 	vctPrint(v);
 	printf("R-------------------\n");
 	vctSwap(&v,2,7);
 	vctPrint(v);
 	printf("R-------------------\n");
 
-	
+
+
 	return 0;
 }
 
@@ -67,6 +72,6 @@ void vctPrint(vector v)
 {
 	int i = 0;
 	for(i = 0;i < v._size;i++){
-		printf("%d ==> %d \n",i,v.elem[i]);
+		printf("%d ==> %c \n",i,v.elem[i]);
 	}
 }
